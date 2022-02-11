@@ -1,4 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-body {
-  background: rgb(207, 205, 205);
+
+.fa-solid {
+  font-size: 24px;
+  margin: auto;
 }
