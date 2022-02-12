@@ -6,9 +6,10 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector(".symbol").classList.add(generateRandomSuit());
-  document.querySelector(".other-symbol").classList.add(generateRandomSuit());
-  document.querySelector(".number").classList.add(generateRandomNumber());
+  let suit = generateRandomSuit();
+  document.querySelector(".symbol").innerHTML = suit;
+  document.querySelector(".other-symbol").innerHTML = suit;
+  document.querySelector(".number").innerHTML = generateRandomNumber();
 };
 
 let generateRandomNumber = function() {
