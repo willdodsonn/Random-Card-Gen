@@ -5,9 +5,10 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  document.querySelector(".card").classList.add(generateRandomSuit());
-  document.querySelector(".card").classList.add(generateRandomNumber());
+window.onload = () => {
+  document.querySelector(".symbol").classList.add(generateRandomSuit());
+  document.querySelector(".other-symbol").classList.add(generateRandomSuit());
+  document.querySelector(".number").classList.add(generateRandomNumber());
 };
 
 let generateRandomNumber = function() {
@@ -31,7 +32,7 @@ let generateRandomNumber = function() {
 };
 
 let generateRandomSuit = function() {
-  let suit = ["diamonds", "spades", "hearts", "clubs"];
+  let suit = ["♦", "♥", "♠", "♣"];
   let randomSuit = Math.floor(Math.random() * suit.length);
   return suit[randomSuit];
 };
